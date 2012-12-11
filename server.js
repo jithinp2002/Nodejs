@@ -11,8 +11,7 @@ ws.createServer(
 		websocket.addListener("connect", function (resource) {
 			// emitted after handshake
 			sys.debug("connect: " + resource);
-			websocket.write("jithin");
-		}).addListener("data", function (data) {
+			}).addListener("data", function (data) {
 			sys.debug("hi" + data);
 		// handle incoming data
 		// send data to ALL clients whenever ANY client send up data
